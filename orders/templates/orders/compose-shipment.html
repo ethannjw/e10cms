@@ -1,0 +1,402 @@
+{% extends "orders/layout.html" %}
+{% load static %}
+{% block body %}
+
+	<!-- Breadcomb area Start-->
+	<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-mail"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Create Shipment</h2>
+										<p>This form will create shipment and request to the selected 3rd party shipping company</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-xs-3">
+								<div class="breadcomb-report">
+									<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcomb area End-->
+    <!-- Compose email area Start-->
+    <div class="inbox-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="inbox-left-sd">
+                        <div class="compose-ml">
+                            <a class="btn" href="#">Create New</a>
+                        </div>
+                        <div class="inbox-status">
+                            <ul class="inbox-st-nav inbox-ft">
+                                <li><a href="#"><i class="notika-icon notika-mail"></i> Ninjavan</a></li>
+                                <li><a href="#"><i class="notika-icon notika-sent"></i> Qxpress</a></li>
+                                <li><a href="#"><i class="notika-icon notika-draft"></i> DHL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                    <div class="view-mail-list sm-res-mg-t-30">
+                        <div class="view-mail-hd">
+                            <div class="view-mail-hd">
+                                <h4>Enter Recipient Details</h4>
+                            </div>
+                        </div>
+                        <div class="form-element-list">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb">
+                                        <span>Name: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb">
+                                        <span>Country: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb">
+                                        <span>Address1: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb">
+                                        <span>Address2: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb">
+                                        <span>Postcode: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="number" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb">
+                                        <span>Contact: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group cmp-em-mg">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="number" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </br>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Message: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="text" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-mail-list sm-res-mg-t-30">
+                        <div class="view-mail-hd">
+                            <div class="view-mail-hd">
+                                <h4>Enter Shipment Details</h4>
+                            </div>
+                        </div>
+                        <div class="form-element-list mg-t-20">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="nk-int-mk">
+                                            <span>Pickup Request Date: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="bootstrap-select fm-cmp-mg">
+                                                <select class="selectpicker">
+                                                        <option>Tomorrow</option>
+                                                        <option>9th Sep 2020</option>
+                                                        <option>10th Sep 2020</option>
+                                                        <option>11th Sep 2020</option>
+                                                        <option>14th Sep 2020</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                                        <div class="nk-int-mk">
+                                            <span>Pickup Request Time: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="bootstrap-select fm-cmp-mg">
+                                                <select class="selectpicker">
+                                                        <option>10:00 - 19:00</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </br>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="nk-int-mk">
+                                        <span>Pickup Memo: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="view-mail-list sm-res-mg-t-30">
+                            <div class="view-mail-hd">
+                                <div class="view-mail-hd">
+                                    <h4>Enter Sender Details</h4>
+                                </div>
+                            </div>
+                            <div class="form-element-list">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Name: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="text" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Country: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="text" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Address1: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="text" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Address2: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="text" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Postcode: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="number" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb">
+                                            <span>Contact: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group cmp-em-mg">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="number" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-mail-list sm-res-mg-t-30">
+                            <div class="view-mail-hd">
+                                <div class="view-mail-hd">
+                                    <h4>Enter Item Details</h4>
+                                </div>
+                            </div>
+                            <div class="form-element-list mg-t-20">
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="nk-int-mk">
+                                            <span>Item name: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="text" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="nk-int-mk">
+                                            <span>Total Parcel Value: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="nk-int-st cmp-int-in cmp-email-over">
+                                                <input type="number" class="form-control" placeholder="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                                            <div class="nk-int-mk">
+                                                <span>Item Weight: </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="bootstrap-select fm-cmp-mg">
+                                                    <select class="selectpicker">
+                                                            <option>0 - 5 kg</option>
+                                                            <option>5 - 10 kg</option>
+                                                            <option>20 - 50 kg</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12">
+                                            <div class="nk-int-mk">
+                                                <span>Item Dimensions: </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="bootstrap-select fm-cmp-mg">
+                                                    <select class="selectpicker">
+                                                            <option>0 - 160cm</option>
+                                                            <option>160 - 180cm</option>
+                                                            <option>180 - 200cm</option>
+                                                        </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="vw-ml-action-ls text-right mg-t-20">
+                            <div class="btn-group ib-btn-gp active-hook nk-email-inbox">
+                                <button class="btn btn-default btn-sm waves-effect"><i class="notika-icon notika-next"></i> Submit</button>
+
+                                <button class="btn btn-default btn-sm waves-effect"><i class="notika-icon notika-trash"></i> Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compose email area End-->
+{% endblock %}

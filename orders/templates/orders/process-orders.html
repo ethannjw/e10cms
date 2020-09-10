@@ -1,0 +1,306 @@
+{% extends "orders/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+    <!-- Breadcomb area Start-->
+	<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-edit"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Order Placement Wizard</h2>
+										<p>Place your orders here</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+								<div class="breadcomb-report">
+									<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcomb area End-->
+    <!-- Wizard area Start-->
+    <div class="wizard-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wizard-wrap-int">
+                        <div class="wizard-hd">
+                            <h2>Order Placement Wizard</h2>
+                            <p>544 New orders today</p>
+                        </div>
+                        <!-- Start Status area -->
+                        <div class="notika-status-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                                            <div class="website-traffic-ctn">
+                                                <h2><span class="counter">213</span></h2>
+                                                <p>Qoo10</p>
+                                            </div>
+                                            <div class="sparkline-bar-stats4">1,4,8,3,5,6,4,8,3,3,9,5</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                                            <div class="website-traffic-ctn">
+                                                <h2><span class="counter">145</span></h2>
+                                                <p>Shopee</p>
+                                            </div>
+                                            <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                                            <div class="website-traffic-ctn">
+                                                <h2><span class="counter">186</span></h2>
+                                                <p>Lazada</p>
+                                            </div>
+                                            <div class="sparkline-bar-stats2">2,4,8,4,5,7,4,7,3,5,7,5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Status area-->
+                        <div id="rootwizard">
+                            <div class="navbar">
+                                <div class="navbar-inner">
+                                    <div class="container-pro wizard-cts-st">
+                                        <ul>
+                                            <li><a href="#tab1" data-toggle="tab">Pull New Orders</a></li>
+                                            <li><a href="#tab2" data-toggle="tab">Check Instock Availability</a></li>
+                                            <li><a href="#tab3" data-toggle="tab">Confirm Orders</a></li>
+                                            <li><a href="#tab4" data-toggle="tab">Generate Labels</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane wizard-ctn" id="tab1">
+                                    <div class="normal-table-list mg-t-30 table-responsive">
+                                        <div class="basic-tb-hd">
+                                            <h2>New Orders</h2>
+                                            <p>For New orders this will be the look. Additional columns can be added. For managing existing orders this will be the look as well.</p>
+                                        </div>
+                                        <div class="bsc-tbl-cds">
+                                            <table class="table table-condensed">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Platform</th>
+                                                        <th>Order No</th>
+                                                        <th>Cart No</th>
+                                                        <th>Description</th>
+                                                        <th>SKU</th>
+                                                        <th>Order Qty</th>
+                                                        <th>Shipping Mtd</th>
+                                                        <th>Ok</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="table-success">
+                                                        <td>1</td>
+                                                        <td>Lazada</td>
+                                                        <td>651615</td>
+                                                        <td>321651</td>
+                                                        <td>SamaungGalaxyS20</td>
+                                                        <td>TGDB-1981652-Z</td>
+                                                        <td>1</td>
+                                                        <td>Ninjavan</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr class="table-success">
+                                                        <td>2</td>
+                                                        <td>Shopee</td>
+                                                        <td>QWD651615</td>
+                                                        <td>QWD321651</td>
+                                                        <td>SamaungGalaxyS30</td>
+                                                        <td>TGDB-1981653-Z</td>
+                                                        <td>2</td>
+                                                        <td>Ninjavan</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Shopee</td>
+                                                        <td>QWD651615</td>
+                                                        <td>QWD321651</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>1</td>
+                                                        <td>Ninjavan</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Lazada</td>
+                                                        <td>651614</td>
+                                                        <td>321652</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>1</td>
+                                                        <td>Singpost</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Lazada</td>
+                                                        <td>651615</td>
+                                                        <td>321651</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>1</td>
+                                                        <td>Ninjavan</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>Qoo10</td>
+                                                        <td>65161523</td>
+                                                        <td>32165134</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>1</td>
+                                                        <td>Qxpress</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Lazada</td>
+                                                        <td>651615</td>
+                                                        <td>321651</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>1</td>
+                                                        <td>Ninjavan</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>Lazada</td>
+                                                        <td>651615</td>
+                                                        <td>321651</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>1</td>
+                                                        <td>Singpost</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane wizard-ctn" id="tab2">
+                                    <div class="normal-table-list mg-t-30">
+                                        <div class="basic-tb-hd">
+                                            <h2>Consolidate Orders</h2>
+                                            <p>Please check for order placement to supplier</p>
+                                        </div>
+                                        <div class="bsc-tbl-cds">
+                                            <table class="table table-condensed">
+                                                <thead>
+                                                    <tr>
+                                                        <th>SKU</th>
+                                                        <th>Order Qty</th>
+                                                        <th>Description</th>
+                                                        <th>Status</th>
+                                                        <th>Missing</th>
+                                                        <th>Process?</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="table-success">
+                                                        <td>TGDB-1981652-Z</td>
+                                                        <td>124</td>
+                                                        <td>SamaungGalaxyS20</td>
+                                                        <td>Out Of Stock</td>
+                                                        <td>4</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr class="table-success">
+                                                        <td>TGDB-1981653-Z</td>
+                                                        <td>215</td>
+                                                        <td>SamaungGalaxyS30</td>
+                                                        <td>Ok</td>
+                                                        <td>0</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TGDB-1981651-Z</td>
+                                                        <td>235</td>
+                                                        <td>SamaungGalaxyS10</td>
+                                                        <td>Out Of Stock</td>
+                                                        <td>123</td>
+                                                        <td><input id="1" type="checkbox" checked></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane wizard-ctn" id="tab3">
+                                    <div class="basic-tb-hd">
+                                        <h2>Proceed with Auto Order placement</h2>
+                                        <p>Please check for order placement to supplier</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary" href="#tab2">Confirm</button>
+                                    </div>
+                                </br>
+                                    <p>
+                                        Order placement status here....
+                                    </p>
+                                </div>
+                                <div class="tab-pane wizard-ctn" id="tab4">
+                                    <div class="basic-tb-hd">
+                                        <h2>Print Labels</h2>
+                                        <p>Download files for label printing</p>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary" href="#tab2">Download</button>
+                                    </div>
+                                </div>
+                                <div class="wizard-action-pro">
+                                    <ul class="wizard-nav-ac">
+                                        <li><a class="button-first a-prevent" href="#"><i class="notika-icon notika-more-button"></i></a></li>
+                                        <li><a class="button-previous a-prevent" href="#"><i class="notika-icon notika-back"></i></a></li>
+                                        <li><a class="button-next a-prevent" href="#"><i class="notika-icon notika-next-pro"></i></a></li>
+                                        <li><a class="button-last a-prevent" href="#"><i class="notika-icon notika-more-button"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wizard area End-->
+
+{% endblock %}
+{% block footer %}
+<!--  wizard JS
+    ============================================ -->
+<script src="{% static 'js/wizard/jquery.bootstrap.wizard.min.js' %}"></script>
+<script src="{% static 'js/wizard/wizard-active.js' %}"></script>
+<!-- meanmenu JS
+    ============================================ -->
+<script src="{% static 'js/meanmenu/jquery.meanmenu.js' %}"></script>
+{% endblock %}

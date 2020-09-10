@@ -1,0 +1,426 @@
+{% extends "orders/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <!-- Breadcomb area Start-->
+	<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-edit"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Order Retrieve Wizard</h2>
+										<p>Here you can check, cancel, return orders</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+								<div class="breadcomb-report">
+									<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcomb area End-->
+
+    <!-- Start Status area -->
+    <div class="row">
+        <div class="notika-status-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                            <div class="website-traffic-ctn">
+                                <h2><span class="counter">213</span></h2>
+                                <p>Qoo10</p>
+                            </div>
+                            <div class="sparkline-bar-stats4">1,4,8,3,5,6,4,8,3,3,9,5</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                            <div class="website-traffic-ctn">
+                                <h2><span class="counter">145</span></h2>
+                                <p>Shopee</p>
+                            </div>
+                            <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                        <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                            <div class="website-traffic-ctn">
+                                <h2><span class="counter">186</span></h2>
+                                <p>Lazada</p>
+                            </div>
+                            <div class="sparkline-bar-stats2">2,4,8,4,5,7,4,7,3,5,7,5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Status area-->
+    <!-- Data Table area Start-->
+    <div class="data-table-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="data-table-list">
+                        <div class="form-element-list">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg">
+                                        <label>Period</label>
+                                        <div class="bootstrap-select">
+                                            <select class="selectpicker">
+                                                    <option>Order Date</option>
+                                                    <option>Ship Date</option>
+                                                    <option>Delivered Date</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg" id="data_1">
+                                        <label>Start Date</label>
+                                        <div class="input-group date nk-int-st">
+                                            <span class="input-group-addon"></span>
+                                            <input type="text" class="form-control" value="12/19/2019">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg" id="data_2">
+                                        <label>End Date</label>
+                                        <div class="input-group date nk-int-st">
+                                            <span class="input-group-addon"></span>
+                                            <input type="text" class="form-control" value="12/01/2019">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg ">
+                                        <div class="bootstrap-select">
+                                            <label>Status</label>
+                                            <select class="selectpicker">
+                                                    <option>Order Date</option>
+                                                    <option>Ship Date</option>
+                                                    <option>Delivered Date</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg">
+                                        <div class="bootstrap-select">
+                                            <label>Type</label>
+                                            <select class="selectpicker">
+                                                    <option>Order Date</option>
+                                                    <option>Ship Date</option>
+                                                    <option>Delivered Date</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg">
+                                        <div class="bootstrap-select">
+                                            <label>Advanced Search</label>
+                                            <select class="selectpicker">
+                                                    <option>Order Number</option>
+                                                    <option>Cart Number</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg">
+                                        <div class="bootstrap-select">
+                                            <label>Detail</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <div class="form-group nk-datapk-ctm form-elet-mg pull-right">
+                                        <div class="form-example-int mg-t-15">
+                                            <button class="btn btn-success notika-btn-success">Retrieve</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div style="height: 500px; overflow-y: auto;" class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Check</th>
+                                        <th>Order No</th>
+                                        <th>Status</th>
+                                        <th>Order Time</th>
+                                        <th>Option Code</th>
+                                        <th style="width: 40px;">Qty</th>
+                                        <th>Description</th>
+                                        <th>Name</th>
+                                        <th>Mobile</th>
+                                        <th>Address</th>
+                                        <th>Country</th>
+                                        <th>Zipcode</th>
+                                        <th>Total Price</th>
+                                        <th>Shipping</th>
+                                        <th>AWB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>200902MUYAR3QW</td>
+                                        <td>READY_TO_SHIP</td>
+                                        <td>9/2/2020 11:40</td>
+                                        <td><input type="text" value="NHB2400-2401-L"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S10</td>
+                                        <td>John</td>
+                                        <td>6581273572</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:86px;">176 CANNON DRIVE, #06-14 , SG, 532450</td>
+                                        <td>SG</td>
+                                        <td>532450</td>
+                                        <td>112.69</td>
+                                        <td><select>
+                                                <option>SP</option>
+                                                <option>NV</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="N/A"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>200902KR5998ES</td>
+                                        <td>READY_TO_SHIP</td>
+                                        <td>9/2/2020 1:00</td>
+                                        <td><input type="text" value="NHB2400-2401-S"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S20</td>
+                                        <td>Bob Lee</td>
+                                        <td>6596954212</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:86px;">BLOCK 534, ANG MO KIO AVENUE 100, #05-2429 , SG, 123456</td>
+                                        <td>SG</td>
+                                        <td>123456</td>
+                                        <td>110.12</td>
+                                        <td><select>
+                                                <option>SP</option>
+                                                <option>NV</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="N/A"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>200901J006YGGT</td>
+                                        <td>READY_TO_SHIP</td>
+                                        <td>9/1/2020 8:15</td>
+                                        <td><input type="text" value="NHB2400-2414-S"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S30</td>
+                                        <td>Kenneth Tan</td>
+                                        <td>6586929789</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">6 Can DRIVE, EIGHT COURTYARD, #02-07 , SG, 768123</td>
+                                        <td>SG</td>
+                                        <td>768123</td>
+                                        <td>255.29</td>
+                                        <td><select>
+                                                <option>NV</option>
+                                                <option>SP</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="NJO3845759L"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>200901J006YGGT</td>
+                                        <td>READY_TO_SHIP</td>
+                                        <td>9/1/2020 8:15</td>
+                                        <td><input type="text" value="NHB2400-2421-S"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S30</td>
+                                        <td>Kenneth Tan</td>
+                                        <td>6586929789</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">6 Can DRIVE, EIGHT COURTYARD, #02-07 , SG, 768123</td>
+                                        <td>SG</td>
+                                        <td>768123</td>
+                                        <td>255.29</td>
+                                        <td><select>
+                                                <option>NV</option>
+                                                <option>SP</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="NJO3845759L"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>200901H54GWND8</td>
+                                        <td>READY_TO_SHIP</td>
+                                        <td>9/1/2020 0:14</td>
+                                        <td><input type="text" value="NHB2400-2421-M"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S20</td>
+                                        <td>Alfred Tan</td>
+                                        <td>6597629456</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">BLOCK 226, SERANGOON AVENUE 4, #06-798 , SG, 123556</td>
+                                        <td>SG</td>
+                                        <td>123556</td>
+                                        <td>100.94</td>
+                                        <td><select>
+                                                <option>SP</option>
+                                                <option>NV</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="N/A"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>200831FF18294V</td>
+                                        <td>CANCELLED</td>
+                                        <td>8/31/2020 8:06</td>
+                                        <td><input type="text" value="NHB2400-2401-L"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S20</td>
+                                        <td>Toh Boon Shiok</td>
+                                        <td>6584548899</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">BLOCK 219, BUKIT BATOK STREET 21, #09-240 , SG, 655611</td>
+                                        <td>SG</td>
+                                        <td>655611</td>
+                                        <td>110.9</td>
+                                        <td><select>
+                                                <option>SP</option>
+                                                <option>NV</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="N/A"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>2008289F8R742A</td>
+                                        <td>DELIVERED</td>
+                                        <td>8/28/2020 22:59</td>
+                                        <td><input type="text" value="NHB2400-2414-3XL"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S10</td>
+                                        <td>Alam</td>
+                                        <td>6584831654</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">BLOCK 999, BUKIT BATOK STREET 99, #07-99 , SG, 650999</td>
+                                        <td>SG</td>
+                                        <td>650999</td>
+                                        <td>407.21</td>
+                                        <td><select>
+                                                <option>NV</option>
+                                                <option>SP</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="NJO3845769L"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>2008289F8R742A</td>
+                                        <td>DELIVERED</td>
+                                        <td>8/28/2020 22:59</td>
+                                        <td><input type="text" value="NHB2400-2406-3XL"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S10</td>
+                                        <td>Alam</td>
+                                        <td>6584831654</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">BLOCK 999, BUKIT BATOK STREET 99, #07-99 , SG, 650999</td>
+                                        <td>SG</td>
+                                        <td>650999</td>
+                                        <td>407.21</td>
+                                        <td><select>
+                                                <option>NV</option>
+                                                <option>SP</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="NJO3845779L"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>2008289F8R742A</td>
+                                        <td>DELIVERED</td>
+                                        <td>8/28/2020 22:59</td>
+                                        <td><input type="text" value="NHB2400-2404-3XL"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S10</td>
+                                        <td>Alam</td>
+                                        <td>6584831654</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">BLOCK 999, BUKIT BATOK STREET 99, #07-99 , SG, 650999</td>
+                                        <td>SG</td>
+                                        <td>650999</td>
+                                        <td>407.21</td>
+                                        <td><select>
+                                                <option>NV</option>
+                                                <option>SP</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="NJO3845789L"/></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="checkbox" name="name1" /></td>
+                                        <td>2008289F8R742A</td>
+                                        <td>DELIVERED</td>
+                                        <td>8/28/2020 22:59</td>
+                                        <td><input type="text" value="NHB2400-2421-3XL"/></td>
+                                        <td><input style="width: 40px;" type="number" value="1"/></td>
+                                        <td>Samsung S10</td>
+                                        <td>Alam</td>
+                                        <td>6584831654</td>
+                                        <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">BLOCK 999, BUKIT BATOK STREET 99, #07-99 , SG, 650999</td>
+                                        <td>SG</td>
+                                        <td>650999</td>
+                                        <td>407.21</td>
+                                        <td><select>
+                                                <option>NV</option>
+                                                <option>SP</option>
+                                                <option>QX</option>
+                                            </select></td>
+                                        <td><input type="text" value="NJO3845790L"/></td>
+                                      </tr>
+                                    </tbody>
+
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group nk-datapk-ctm form-elet-mg">
+                                        <div class="form-example-int mg-t-15 pull-right" >
+                                            <button class="btn btn-danger notika-btn-danger">Cancel Order</button>
+                                            <button class="btn btn-success notika-btn-success">Submit Changes</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Data Table area End-->
+
+{% endblock %}

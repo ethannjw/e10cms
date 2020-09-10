@@ -1,0 +1,195 @@
+{% extends "orders/layout.html" %}
+{% load static %}
+{% block body %}
+
+	<!-- Breadcomb area Start-->
+	<div class="breadcomb-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="breadcomb-list">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="breadcomb-wp">
+									<div class="breadcomb-icon">
+										<i class="notika-icon notika-mail"></i>
+									</div>
+									<div class="breadcomb-ctn">
+										<h2>Create New Product</h2>
+										<p>This form will create new product and upload to the platforms. For creating promocode and promotion campaign it will be similar</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-3">
+								<div class="breadcomb-report">
+									<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="notika-icon notika-sent"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcomb area End-->
+    <!-- Compose email area Start-->
+    <div class="inbox-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+                    <div class="inbox-left-sd">
+                        <div class="compose-ml">
+                            <a class="btn" href="#">Create New</a>
+                        </div>
+                        <div class="inbox-status">
+                            <ul class="inbox-st-nav inbox-ft">
+                                <li><a href="#"><i class="notika-icon notika-mail"></i> Qoo10<input id="check-qoo10" type="checkbox" class="pull-right" checked></a></li>
+                                <li><a href="#"><i class="notika-icon notika-sent"></i> Shopee<input id="check-shopee" type="checkbox" class="pull-right" checked></a></li>
+                                <li><a href="#"><i class="notika-icon notika-draft"></i> Lazada<input id="check-lazada" type="checkbox" class="pull-right" checked></a></li>
+                                <li><a href="#"><i class="notika-icon notika-trash"></i> Zalora<input id="check-zalora" type="checkbox" class="pull-right" checked></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                    <div class="view-mail-list sm-res-mg-t-30">
+                        <div class="view-mail-hd">
+                            <div class="view-mail-hd">
+                                <h4>Product info</h4>
+                            </div>
+                        </div>
+                        <div class="form-element-list mg-t-20">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                                        <div class="cmp-int-lb text-right">
+                                            <span>Category: </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12">
+                                        <div class="form-group">
+                                            <div class="bootstrap-select fm-cmp-mg">
+                                                <select class="selectpicker">
+                                                        <option>Electronics</option>
+                                                        <option>Personal Care</option>
+                                                        <option>Food</option>
+                                                        <option>Toys</option>
+                                                        <option>Men's Wear</option>
+                                                        <option>Women's Wear</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb text-right">
+                                        <span>Name: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="email" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb text-right">
+                                        <span>Brand: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="email" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb text-right">
+                                        <span>Price: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group cmp-em-mg">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                                    <div class="cmp-int-lb text-right">
+                                        <span>SKU: </span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-sm-10 col-xs-12">
+                                    <div class="form-group cmp-em-mg">
+                                        <div class="nk-int-st cmp-int-in cmp-email-over">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cmp-int-box mg-t-20">
+                                <div class="view-mail-hd">
+                                    <div class="view-mail-hd">
+                                        <h4>Description</h4>
+                                    </div>
+                                </div>
+                            <div class="html-editor-cm">
+                                <ul>
+                                    <li>Quad rear camera with 30x Space Zoom</li>
+                                    <li>6.7" Dynamic AMOLED2x display with 120Hz refresh</li>
+                                    <li>Shoot night shots like a pro</li>
+                                    <li>500mAh (typical) Battery and 25W Super Fast Charging</li>
+                                    <li>Always-on display</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="view-mail-hd">
+                            <div class="view-mail-hrd">
+                                <h4>Photo Upload </h4>
+                            </div>
+                        </div>
+
+                        <div class="multiupload-sys">
+                            <div id="dropzone" class="dropmail">
+                                <form action="/upload" class="dropzone dropzone-custom needsclick" id="demo-upload">
+                                    <div class="dz-message needsclick download-custom">
+                                        <i class="notika-icon notika-cloud" aria-hidden="true"></i>
+                                        <h2>Drop files here or click to upload.</h2>
+                                        <p><span class="note needsclick">(Dropzone for uploading photos)</span>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="vw-ml-action-ls text-right mg-t-20">
+                            <div class="btn-group ib-btn-gp active-hook nk-email-inbox">
+                                <button class="btn btn-default btn-sm waves-effect"><i class="notika-icon notika-next"></i> Submit</button>
+
+                                <button class="btn btn-default btn-sm waves-effect"><i class="notika-icon notika-trash"></i> Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Compose email area End-->
+{% endblock %}
+{% block footer %}
+<!-- Input Mask JS
+    ============================================ -->
+<script src="{% static 'js/jasny-bootstrap.min.js' %}"></script>
+{% endblock %}
