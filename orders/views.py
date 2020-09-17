@@ -5,6 +5,7 @@ from django.views.decorators.http import require_http_methods
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import HttpResponseRedirect
+from django.db import IntegrityError
 
 from .models import User, Order
 

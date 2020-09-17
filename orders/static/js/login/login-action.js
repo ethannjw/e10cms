@@ -20,6 +20,33 @@
     });
 
 })(jQuery);
+
+// // get any messages and alert user
+// document.addEventListener("DOMContentLoaded", function () {
+//     var message = document.querySelector("#message").value;
+//     if (message.length != 0) {
+//         alert(message);
+//     }
+// });
+
+// insert enter keyup for login page
+$("#password, #username").keyup(function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        submit_login();
+        return false;
+    }
+});
+
+// insert enter keyup for register page
+$("#register_username, #register_email, #register_password, #confirm_password").keyup(function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        submit_register();
+        return false;
+    }
+});
+
 function submit_login() {
     var username = document.querySelector('#username').value;
     var password = document.querySelector('#password').value;
