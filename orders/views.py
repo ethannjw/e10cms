@@ -39,7 +39,7 @@ def process_order(request):
 @require_http_methods("POST")
 def check_login(request):
     # Attempt to sign user in
-    username = request.POST["username"]
+    username = request.POST["username"].upper()
     password = request.POST["password"]
     user = authenticate(request, username=username, password=password)
     # Check if authentication successful
@@ -63,7 +63,7 @@ def logout_view(request):
 @require_http_methods("POST")
 def register(request):
     if request.method == "POST":
-        username = request.POST["username"]
+        username = request.POST["username"].upper()
         email = request.POST["email"]
 
         # Ensure password matches confirmation
